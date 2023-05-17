@@ -281,13 +281,14 @@ body{
 }
 
 .user-card{
-    width: 65%;
+    width: 80%;
     margin: 0px auto 0px auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .datacard{
-    width:13%;
+    width:150px;
     height:290px;
     border: 1px solid rgb(202, 201, 201);
     border-radius: 3px;
@@ -368,8 +369,9 @@ margin-bottom: -15px;
 .modified-data{
     position: relative;
     background-image: url(./Assets/Path\ 1381@2x.png);
-    top:-180px;
-    left: 100px;
+    top:0px;
+    right: 120px;
+    padding: 10px 0px 0px 100px;
 }
 .nav-links-footer a{
     text-decoration: none;
@@ -385,14 +387,288 @@ margin-bottom: -15px;
     align-items: baseline;
 }
 
-@media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 900px) {
     .nav{
         display: flex;
         justify-content: space-between;
         margin: 20px 0px 20px 0px;
     }
     
-}   
+}    */
+@media only screen and (max-width: 1040px) {
+    body{
+        width: 100%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 10px 0px 30px;
+    }
+    .nav-links a{
+        font-size: 20px;
+        padding: 10px;
+        margin: 30px 0px 0px -10px;
+    }
+    .head{
+        margin: 20px 0px 0px 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .banner{
+        width: 100%;
+        background-image:url(./Assets/Banner\ Base\ White.png);
+    }
+    .banner h1{
+        margin: 40px 20px 0px 30px;
+        font-size: 40px;
+    }
+    .banner h3{
+        word-spacing: 3px;
+        line-height: 45px;
+        margin: 30px 70px 0px 30px;
+        font-size: 25px;
+        color: rgb(61, 61, 61);
+    }
+    .banner button{
+        margin: 40px 0px 0px 30px;
+        padding: 15px 80px;
+        font-size: 20px;  
+    }
+    .banner-logo{
+        margin-right: 0px;
+    }
+    .mid-line{
+        font-size: 12px;
+        display: flex;
+        flex-direction: row; 
+    }
+    .mid-line1{
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .mid-line2{
+        justify-content: space-between;
+        margin-left: 30px; 
+        margin-right: 30px; 
+    } 
+    .main-containt{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 400px;
+        background-color:#f1f1f1;
+    }
+    .containt1{
+        margin-top: 20px;
+        margin-bottom: -10px;
+        font-size: 24px;
+    }
+    .containt2{
+        margin: 0px 80px 0px 30px;
+        font-size: 24px;
+    }
+    .containt3{
+        margin: 0px 80px 0px 30px;
+        font-size: 24px;
+    }
+   
+    .levels{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .level-1{
+        margin: 0px 30px -30px 30px;
+        text-align: left;  
+    }
+    .nav-links2 {
+        display: flex;
+        justify-content:space-evenly;
+        margin:0px 0px;
+    }  
+    .nav-links2 a{
+        padding: 10px 0px 0px 0px;
+    }
+    .level-para p{
+        margin: 0px 120px 0px 30px;
+        font-size: 20px;
+    }
+    .level-containt{
+        margin: 0px 0px 0px 30px;
+    }
+     .data1{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin: 30px 30px 0px 0px;
+    }
+    .inner-data{
+        margin-top: -30px;
+    }
+   
+    .data2{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        margin-right: 0px;
+        
+    }
+    .data2 img{
+        height: 300px;
+    }
+ 
+    .level-containt button{
+        margin: 0px 0px 0px 10px;
+        padding: 15px 70px;
+        background-color: orangered;
+        color: white;
+        font-size: 15px;
+        border: 0px;
+    }
+    .modified-data{
+        padding: 10px 0px 50px 100px;
+        margin-right: 80px;
+        margin-left: 10px;
+        margin-bottom: -70px;
+        position: relative;
+        top:0px;
+        left: 0px;
+        background-image: url(./Assets/Path\ 1381@2x.png);
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .slider-container{
+        background-color: aliceblue;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        height: 600px;
+    }
+    .slider-head{
+        font-size: 23px;
+        text-align: left;
+        margin:0px 0px 0px 30px;
+    }
+    .slider-head h1{
+        padding-top: 50px;
+    }
+    .slider-head p{
+        margin-right: 100px;
+        padding-bottom: 10px;
+    }
+    .slider{
+        display: flex;
+        justify-content:space-evenly; 
+     }
+  
+    .card{
+        width: 80%;
+        display: flex;
+        justify-content:space-around;
+        padding: 10px;
+        box-shadow: 0px 1px 5px;
+    }
+    .card-imgdata{
+        padding-left: 0px;
+        position: relative;
+        top:50px;
+        left:20px;
+    }
+    .card-data{
+        padding: 10px;
+    }
+    .user-data{
+        padding-left: 20px;
+        margin-bottom: -20px;
+    }
+    .user-data{
+        padding-left: 20px;
+    }
+    .card-data p{
+        font-size: 20px;
+    }
+    .cart-footer{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-links{
+        align-self: flex-start;
+    }
+    .user-card-head{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .user-card{
+        width: 80%;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .datacard{
+        width:150px;
+        margin: 30px auto 0px auto;
+        height:320px;
+        padding: 30px 30px 30px 50px;
+    }
+    .footer-section1{
+        margin-left: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-section1 h4{
+        margin-right: 75px;
+    }
+    .footer-section h4{
+        margin-right: 100px;
+    }
+    
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        justify-content: space-around;
+    }
+    
+    .foot-sec1{
+        display: flex;
+    }
+    .foot-sec2{
+        display: flex;
+        align-items: baseline;
+    }
+    .foot-sec2 h4{
+        margin-right: 50px;
+    }
+    .modified-data{
+        position: relative;
+        background-image: url(./Assets/Path\ 1381@2x.png);
+        top:0px;
+        right: 120px;
+        padding: 10px 0px 0px 100px;
+    }
+    .nav-links-footer a{
+        text-decoration: none;
+        display: block;
+        padding: 20px 20px 0px 20px;
+    }
+    .nav-links-footer a:hover{
+        border-bottom:4px solid rgb(255, 119, 0);
+    }
+    .nav-links-footer{
+        display: flex;
+        justify-content:baseline;
+        align-items: baseline;
+    }
+}
+/* 717 Break Point */
 @media only screen and (max-width: 717px) {
     body{
         width: 100%;
@@ -574,7 +850,7 @@ margin-bottom: -15px;
     .card-imgdata{
         padding-left: 0px;
         position: relative;
-        top:100px;
+        top:80px;
         left:20px;
     }
     .card-data{
@@ -611,7 +887,7 @@ margin-bottom: -15px;
         flex-direction: column;
     }
     .datacard{
-        width:50%;
+        width:150px;
         margin: 30px auto 0px auto;
         height:320px;
         padding: 30px 30px 30px 50px;
