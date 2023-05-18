@@ -289,7 +289,7 @@ color: #393939;
 }
 .user-card {
   width: 70%;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 50px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -730,15 +730,15 @@ color: #393939;
   .card {
     width: 100%;
     justify-content: space-around;
-    padding: 10px;
+    padding: 0px;
     box-shadow: 0px 1px 5px;
   }
   .card-imgdata {
     padding-left: 0px;
-    top: 80px;
+    top: 110px;
   }
   .card-data {
-    padding: 10px;
+    padding: 0px 5px 0px 10px ;
   }
   .user-data {
     padding-left: 20px;
@@ -762,10 +762,12 @@ color: #393939;
     font-size: 20px;
     text-align: left;
     margin-left: 30px;
+
   }
   .user-card {
     width: 80%;
     flex-direction: column;
+   
   }
   .datacard {
     width: 180px;
